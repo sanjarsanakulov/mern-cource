@@ -1,1 +1,1 @@
-# 1-modul-Murakkab-JavaScript
+# 1 JS
