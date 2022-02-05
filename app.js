@@ -3,3 +3,5 @@ let g = 5,
     c = 9;
 
 console.log((g + t) * c);
+
+console.log(g + t * c);
