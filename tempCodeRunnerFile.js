@@ -1,1 +1,1 @@
-console.log(0 == false);
+console.log(typeof([1, 2, 3] == [1, 2, 3]));
