@@ -21,20 +21,20 @@ const personalNewsDB = {
   privat: false,
 }
 
-// const a = prompt("Oxirgi ko'rgan yangiliklarizdan biri?"),
-//       b = prompt("Unga qancha baho bergan bo'lar edingiz?");
+for (let i = 0; i < 2; i++) {
+  const a = prompt("Oxirgi ko'rgan yangiliklarizdan biri?"),
+      b = prompt("Unga qancha baho bergan bo'lar edingiz?");
 
-// personalNewsDB.news[a] = b;
-
-// console.log(personalNewsDB);
-
-
-for (let i = 0; i < 3; i++) {
-  // if (i == 0) console.log(+prompt("Siz qancha yangilik ko'rdingiz?"));
-  // if (i == 1) console.log(prompt("Oxirgi ko'rgan yangiliklarizdan biri?"));
-  // if (i == 2) console.log(prompt("Unga qancha baho bergan bo'lar edingiz?"));
-  
+  if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+    personalNewsDB.news[a] = b; 
+    console.log("Tayyor");
+  } else {
+    console.log("Error");
+    i--;
+  }
 }
+
+console.log(personalNewsDB);
 
 if (personalNewsDB.count < 10) {
   console.log("Juda oz sonli yangiliklar o'qilibdi");
