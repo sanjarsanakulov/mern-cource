@@ -64,7 +64,7 @@ function showMyDB(hidden) {
 showMyDB(personalNewsDB.privat);
 
 // sikl ichida [i - 1] yozilishiga sabab sikl 1 dan(i = 1) boshlanayapti, natija chiqqanda massivning 0 index bo'sh bo'lib qoladi va 1,2,3 index deb chiqadi
-// shuni oldini olish uchun ham [i - 1] deb yozilgan va massiv o indexdan boshlab ishlagan va bo'sh qolmagan
+// shuni oldini olish uchun ham [i - 1] deb yozilgan va massiv 0 indexdan boshlab ishlagan va bo'sh qolmagan
 function writeYourGenres() {
     for (let i = 1; i <= 3; i++) {
         personalNewsDB.genres[i -1] = prompt(`Sizning sevimli janringiz nomeri ${i}`);
